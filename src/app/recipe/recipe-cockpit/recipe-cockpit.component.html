@@ -1,0 +1,8 @@
+<label for="name">Recipe Name</label>
+<!-- <input id="name" type="text" [(ngModel)]="recipeName"><br> -->
+<input id="name" type="text" #recipeName><br>
+<label for="ingredients">Ingredients</label>
+<!-- <input id="ingredients" type="text"[(ngModel)]="recipeIngredients"><br> -->
+<input id="ingredients" type="text" #recipeIngredients><br>
+<button type="submit" (click)="addVegRecipe()">Add Veg Recipe</button>
+<button type="submit" (click)="addNonVegRecipe()">Add NonVeg Recipe</button>

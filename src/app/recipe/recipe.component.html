@@ -1,0 +1,33 @@
+<!-- <label for="name">Recipe Name</label>
+<input id="name" type="text" [(ngModel)]="recipeName"><br>
+<label for="ingredients">Ingredients</label>
+<input id="ingredients" type="text"[(ngModel)]="recipeIngredients"><br>
+<button type="submit" (click)="addVegRecipe()">Add Veg Recipe</button>
+<button type="submit" (click)="addNonVegRecipe()">Add NonVeg Recipe</button> -->
+
+<app-recipe-cockpit (VegRecipe)="addVeg($event)" (NonVegRecipe)="addNonVeg($event)"></app-recipe-cockpit>
+
+
+<!-- <div *ngFor="let recipe of recipes">
+    <div *ngIf="recipe.type=='veg'" style="color:green">
+        <h1>{{recipe.name}}</h1>
+        <p>{{recipe.ingredients}}</p>
+    </div>
+    <div *ngIf="recipe.type=='nonVeg'" style="color:red">
+        <h1>{{recipe.name}}</h1>
+        <p>{{recipe.ingredients}}</p>
+    </div>
+</div> -->
+
+<button type="submit" (click)="destroy()">Destroy the element</button>
+<app-recipe-info [recipe]="item" *ngFor="let item of recipes">
+    <div *ngIf="item.type=='veg'" style="color:green">
+        <h1 #itemName>{{item.name}}</h1>
+        <p>{{item.ingredients}}</p>
+    </div>
+    <div *ngIf="item.type=='nonVeg'" style="color:red">
+        <h1>{{item.name}}</h1>
+        <p>{{item.ingredients}}</p>
+    </div>
+</app-recipe-info>
+

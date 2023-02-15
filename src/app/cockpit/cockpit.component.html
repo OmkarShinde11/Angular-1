@@ -1,0 +1,9 @@
+<label for="name">Server Name</label>
+<!-- <input id="name" type="text" [(ngModel)]="servername"><br> -->
+<input id="name" type="text" #servername><br>
+
+<label for="content">Server Content</label>
+<!-- <input id="content" type="text" [(ngModel)]="serverContent"><br> -->
+<input id="content" type="text" #serverContent><br>
+<button type="submit" (click)="addServer()">Add Server</button><br>
+<button type="submit" (click)="addBlueprint()">Add blueprint</button>
