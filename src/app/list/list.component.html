@@ -1,0 +1,4 @@
+<button type="submit" (click)="isEmployee= !isEmployee">Show the list of Employee</button>
+<ul *ngIf="isEmployee">The list of Employees are
+    <li *ngFor="let employee of employees">{{employee}}</li>
+</ul>

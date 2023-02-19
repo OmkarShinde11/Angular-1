@@ -15,6 +15,7 @@ import { ChoclateComponent } from './choclate/choclate.component';
 import { GamecontrolComponent } from './gamecontrol/gamecontrol.component';
 import { OddComponent } from './odd/odd.component';
 import { EvenComponent } from './even/even.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { EvenComponent } from './even/even.component';
     ChoclateComponent,
     GamecontrolComponent,
     OddComponent,
-    EvenComponent
+    EvenComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
