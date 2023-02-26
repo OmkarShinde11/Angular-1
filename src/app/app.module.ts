@@ -16,6 +16,18 @@ import { GamecontrolComponent } from './gamecontrol/gamecontrol.component';
 import { OddComponent } from './odd/odd.component';
 import { EvenComponent } from './even/even.component';
 import { ListComponent } from './list/list.component';
+import { BasicDirective } from './Dir/basic.directive';
+import { AdvanceDirective } from './Dir/advance.directive';
+import { HostDirective } from './Dir/host.directive';
+import { BindDirective } from './Dir/bind.directive';
+import { StructuralDirective } from './Dir/structural.directive';
+import { DirectivesComponent } from './directives/directives.component';
+import { AddDirective } from './Dir/add.directive';
+import { HoverDirective } from './Dir/hover.directive';
+import { FadeinFadeoutDirective } from './Dir/fadein-fadeout.directive';
+import { Structure2Directive } from './Dir/structure2.directive';
+import { ClassDirective } from './Dir/class.directive';
+import { TooltipDirective } from './Dir/tooltip.directive';
 
 @NgModule({
   declarations: [
@@ -31,7 +43,19 @@ import { ListComponent } from './list/list.component';
     GamecontrolComponent,
     OddComponent,
     EvenComponent,
-    ListComponent
+    ListComponent,
+    BasicDirective,
+    AdvanceDirective,
+    HostDirective,
+    BindDirective,
+    StructuralDirective,
+    DirectivesComponent,
+    AddDirective,
+    HoverDirective,
+    FadeinFadeoutDirective,
+    Structure2Directive,
+    ClassDirective,
+    TooltipDirective,
   ],
   imports: [
     BrowserModule,

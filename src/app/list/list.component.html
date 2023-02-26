@@ -1,4 +1,9 @@
+<p appHost>This is hostListener @HostListener</p>
+<p appBind>This is hostbinding @HostBinding</p>
 <button type="submit" (click)="isEmployee= !isEmployee">Show the list of Employee</button>
-<ul *ngIf="isEmployee">The list of Employees are
-    <li *ngFor="let employee of employees">{{employee}}</li>
+<ul>
+    <div *appStructural="!isEmployee" appBasic appAdvance>
+        The list of Employees are
+        <li *ngFor="let employee of employees">{{employee}}</li>
+    </div>
 </ul>

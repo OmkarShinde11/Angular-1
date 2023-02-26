@@ -1,0 +1,40 @@
+<button (click)="isClicked=!isClicked">toggle all</button>
+<div *appStructure2="isClicked">
+    <p>Toggle all</p>
+</div>
+
+<button appClass>Toggle All by adding class</button>
+<div>
+    <button appTooltip>Show Tooltip</button>
+</div>
+
+<!-- <div class="row">
+    <div class="col-xs-12">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle">Manage Recipe <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">To shopping list</a></li>
+                <li><a href="#">Edit Recipe</a></li>
+                <li><a href="#">Delete Recipe</a></li>
+            </ul>
+        </div>
+    </div>
+</div> -->
+
+<br><br>
+<div style="border:1px solid #000;width:200px;height:150px">
+    <h4>The Simple Joke</h4>
+    <button appAdd>Tell Me</button>
+</div>
+
+
+<div class="content" style="border:1px solid #000;width:200px;height:150px">
+    <h4>The Simple Joke</h4>
+    <button appHover>Tell Me</button>
+</div>
+
+<div class="content" style="border:1px solid #000;width:200px;height:150px">
+    <h4>The Simple Joke</h4>
+    <p [content]="jokes" class="joke" appFadeinFadeout>{{jokes}}</p>
+    <button>Tell Me</button>
+</div>
