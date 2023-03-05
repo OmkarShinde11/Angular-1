@@ -1,0 +1,46 @@
+<button (click)="addProduct(1,'realme',8000)">Get Products</button>
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of list">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+        </tr>
+    </tbody>
+</table>
+<br><br>
+
+<label>ID</label><br>
+<input type="number" #id/><br>
+<label>Name</label><br>
+<input type="text" #name><br>
+<label>Designation</label><br>
+<input type="text" #designation/><br>
+<button (click)="addEmployee()">Get Employee</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Designation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of employeeList">
+            <th>{{emp.id}}</th>
+            <th>{{emp.name}}</th>
+            <th>{{emp.designation}}</th>
+        </tr>
+    </tbody>
+</table>
+
+<h1>Today Date: {{todayDate}}</h1>
+<h2>Current Time: {{todayTime}}</h2>

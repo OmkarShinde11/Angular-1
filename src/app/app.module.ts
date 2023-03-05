@@ -28,7 +28,8 @@ import { FadeinFadeoutDirective } from './Dir/fadein-fadeout.directive';
 import { Structure2Directive } from './Dir/structure2.directive';
 import { ClassDirective } from './Dir/class.directive';
 import { TooltipDirective } from './Dir/tooltip.directive';
-
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeeService } from './Service/employee.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,13 +57,14 @@ import { TooltipDirective } from './Dir/tooltip.directive';
     Structure2Directive,
     ClassDirective,
     TooltipDirective,
+    EmployeeListComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
